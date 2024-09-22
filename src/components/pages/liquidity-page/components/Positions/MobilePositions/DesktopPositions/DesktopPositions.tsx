@@ -17,6 +17,7 @@ const DesktopPositions = ({ positions }: Props) => {
   const router = useRouter();
 
   const openPosition = useCallback((poolId: PoolId) => {
+    console.log('Opening position', poolId);
     const poolKey = createPoolKey(poolId);
     router.push(`/liquidity/position?pool=${poolKey}`);
   }, [router]);
@@ -51,6 +52,8 @@ const DesktopPositions = ({ positions }: Props) => {
 
         const key = coinAAssetId.toString() + '-' + coinBAssetId.toString();
         const poolId = [position[0][0], position[1][0], false] as PoolId;
+        console.log('Position data', position);
+        console.log('Constructed poolId', poolId);
 
         return (
           <tr className={styles.positionRow} key={key} onClick={() => openPosition(poolId)}>
