@@ -19,6 +19,7 @@ const DesktopPositions = ({ positions }: Props) => {
   const openPosition = useCallback((poolId: PoolId) => {
     console.log('Opening position', poolId);
     const poolKey = createPoolKey(poolId);
+    console.log('Constructed poolKey', poolKey);
     router.push(`/liquidity/position?pool=${poolKey}`);
   }, [router]);
 
