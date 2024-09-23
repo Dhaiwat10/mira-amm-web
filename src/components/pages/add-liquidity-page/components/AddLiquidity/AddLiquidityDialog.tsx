@@ -176,7 +176,7 @@ const AddLiquidityDialog = ({ firstCoin, secondCoin, setPreviewData }: Props) =>
           </div>
           <div className={styles.priceBlock}>
             <p>High price</p>
-            <p>∞</p>
+            <p>&#x221e;</p>
           </div>
         </div>
       </div>

@@ -149,7 +149,9 @@ const ViewPositionPageLayout = () => {
               </div>
               <div className={styles.priceBlock}>
                 <p className={styles.priceBlockTitle}>High Price</p>
-                <p className={styles.priceBlockValue}>∞</p>
+                <p className={styles.priceBlockValue}>
+                  &#x221e;
+                </p>
                 <p className={styles.priceBlockDescription}>{coinA} per {coinB}</p>
               </div>
             </div>
@@ -209,7 +211,9 @@ const ViewPositionPageLayout = () => {
               </div>
               <div className={styles.priceBlockDesktop}>
                 <p className={styles.priceBlockTitle}>High Price</p>
-                <p className={styles.priceBlockValue}>∞</p>
+                <p className={styles.priceBlockValue}>
+                  &#x221e;
+                </p>
                 <p className={styles.priceBlockDescription}>{coinA} per {coinB}</p>
               </div>
             </div>

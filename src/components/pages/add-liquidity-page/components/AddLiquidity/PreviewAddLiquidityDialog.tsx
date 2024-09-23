@@ -103,7 +103,7 @@ const PreviewAddLiquidityDialog = ({ previewData }: Props) => {
                 High price
               </p>
               <p className={styles.previewPriceBlockValue}>
-                ∞
+                &#x221e;
               </p>
               <p className={styles.previewPriceBlockExchange}>
                 {coinA} per {coinB}
