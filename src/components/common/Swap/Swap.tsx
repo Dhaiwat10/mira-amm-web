@@ -370,6 +370,9 @@ const Swap = () => {
     return null;
   }, [swapState.buy.amount, swapState.sell.amount]);
 
+  const inputPreviewPending = previewFetching && lastFocusedMode === 'buy';
+  const outputPreviewPending = previewFetching && lastFocusedMode === 'sell';
+
   return (
     <>
       <div className={styles.swapAndRate}>
